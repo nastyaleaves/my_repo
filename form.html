@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="submit_form.php" method="post">
+      <label for="name">ФИО заказчика:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">колличество туристов:</label>
+      <input type="tel" id="turist" name="turist" required />
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="email">Адрес электронной почты:</label>
+      <input type="email" id="email" name="email" required />
+
+      <input type="submit" value="Заказать" />
+      <input type="reset" value="Очистить форму" />
+    </form>
+
+    <body>
+         <p>Колличество звезд отеля:</p>
+         <p><input type="checkbox" name="a" value="3"> 3</p>
+         <p><input type="checkbox" name="a" value="4" checked> 4</p>
+         <p><input type="checkbox" name="a" value="5" checked> 5</p>
+         <p><input type="submit" value="Отправить"></p>
+        </form>
+       </body>
+
+
+       <p><b>Страна:</b></p>
+       <p><input name="dzen" type="radio" value="japan"> Япония</p>
+       <p><input name="dzen" type="radio" value="italia"> Италия</p>
+       <p><input type="submit" value="Отправить"></p>
+
+
+       <p><select name="food">
+        <optgroup label="Отдаленность от моря:">
+         <option value="r1">1 линия</option>
+         <option value="r2">2 линия</option>
+         <option value="r3">3 линия</option>
+        </optgroup>
+       </select></p>
+       <p><input type="submit" value="Отправить"></p>
+  </body>
+</html>
